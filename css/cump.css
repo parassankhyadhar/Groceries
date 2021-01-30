@@ -1,0 +1,185 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+.font{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.btn{
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: #b17b7b;
+    border: 1px solid black;
+}
+#navbar{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+        
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: .6;
+}
+#logo{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+#ul1{
+    display: flex;
+}
+#ul1 li{
+    margin: 10px;
+    list-style: none;
+}
+#ul1 a{
+    text-align: center;
+    text-decoration: none;
+    padding: 3px;
+    color: white;
+}
+#ul1 a:hover{
+    color: black;
+    border-radius: 7px;
+    background-color:rgb(223, 217, 217);
+}
+#h2{
+    display: inline-block;
+    color: #bf3030;
+    position: relative;
+    border: 2px solid #faff91ba;
+    background-color: #faff91ba;
+    padding: 5px; 
+    border-radius: 10px;
+    animation-name: cnamem;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes cnamem{
+    0%{
+        left: 0rem;
+    }
+    50%{
+        left: -1.8rem;
+    }
+    100%{
+        left: 0rem;
+    }
+}
+#h2:hover{
+    cursor: pointer;
+}
+#home{
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: 50px;
+    color: white;
+}
+#home::before{
+    flex-shrink: 4;
+    content: "";
+    background-image: url('../img/home_back1.jpg');
+    width: 100%;
+    height: 55%;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    opacity: .88;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+#b1{
+    margin: 20px;
+}
+#b1:hover{
+    cursor: pointer;
+}
+#groceries{
+    display: flex;
+    flex-shrink: 2;
+    left: 0px;
+}
+.box{
+    border: 2px solid black;
+    width: 30%;
+    margin: 20px;
+    height: 300px;
+    border-radius: 20px;
+}
+/*#box1::before{
+    content: "";
+    background-image: url('../img/vege.jpg');
+    z-index: -1;
+    opacity: .85;
+    width: 29.9%;
+    border-radius: 20px;
+    height: 300px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    
+}
+#box2::before{
+    content: "";
+    background-image: url('../img/fruits.jpg');
+    width: 29.9%;
+    height: 300px;
+    border-radius: 20px;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .85;
+    position: absolute;
+}
+#box3::before{
+    content: "";
+    background-image: url('../img/spices.jpg');
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .85;
+    position: absolute;
+} */
+#box1{
+    background-image: url(../img/vege.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#box2{
+    background-image: url(../img/fruits.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#box3{
+    background-image: url(../img/spices.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img{
+    height: 120px;
+    width: 120px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.boxcontant{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
